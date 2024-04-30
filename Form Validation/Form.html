@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form">
+        <hr>
+        <div>
+            <h1>Login Form</h1>
+        </div>
+        <hr>
+    <form id="form" onsubmit="return validate()">
+        <label for="name">Name</label>
+        <input type="text" required name="firstName" id="fname" placeholder="FirstName">
+        <input type="text" required name="lastName" id="lname" placeholder="LastName">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" required name="email" id="email" placeholder="Email">
+        <br>
+        <br>
+        <label for="phone">Phone Number</label>
+        <input type="tel" required name="phone" id="phone" placeholder="10-digit number">
+        <br>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" required name="password" id="password" placeholder="password">
+        <br>
+        <br>
+        <span id="gender">Gender</span>
+        <br>
+        <input type="radio" name="gender" value="Male" id="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" value="Female" name="gender" id="female">
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" name="gender" value="Not Mentioned" id="notToDisclose">
+        <label for="notToDisclose">Not wish to Disclose</label>
+        <br>
+        <br>
+        <label for="address">Address:</label><br>
+        <textarea name="address" required id="address" cols="40" rows="8"></textarea>
+        <br>
+        <br>
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" required id="dob" name="dob">
+        <br>
+        <br>
+        <label for="time">Time</label><br>
+        <input type="time" required id="time" name="time">
+        <br>
+        <br>
+        <label id="language">Languages</label>
+        <br>
+        <input type="checkbox" name="language" value="Tamil" id="tamil">
+        <label for="tamil">Tamil</label>
+        <br>
+        <input type="checkbox" name="language" value="English" id="english">
+        <label for="english">English</label>
+        <br>
+        <input type="checkbox" name="language" value="French" id="french">
+        <label for="french">French</label>
+        <br>
+        <br>
+        <label id="interest">Select Your field of interest</label>
+        <br>
+        <select name="interest"  size="3" multiple>
+            <option id="music" value="Music">Music</option>
+            <option id="cycling" value="Cycling">Cycling</option>
+            <option id="badmiton" value="Badmiton">Badmiton</option>
+        </select>
+        <br>
+        <br>
+        <label for="upload">Upload your Photo</label>
+        <br>
+        <input type="file" required id="files" name="upload" id="upload">
+        <br>
+        <br>
+        <input type="submit" name="submit">
+        <input type="reset" name="reset">
+    </form>
+    </div>
+    <div class="dataview displaying">
+        <caption>OUTPUT SCREEN</caption>
+    <br>
+    <table border="" width="80%">
+        <tr>
+            <th>SECTION</th>
+            <th colspan="4">USER DETAILS</th>
+        </tr>
+        <tr>
+            <th>USERNAME</th>
+            <td id="user-name" colspan="4"></td>
+        </tr>
+        <tr>
+            <th>EMAIL ID</th>
+            <td id="user-mail" colspan="4"></td>
+        </tr>
+        <tr>
+            <th>PHONE NUMBER</th>
+            <td id="user-phone" colspan="4"></td>
+        </tr>
+        <tr>
+            <th>PASSWORD</th>
+            <td id="user-pass" colspan="4"></td>
+        </tr>
+        <tr>
+            <th>GENDER</th>
+            <td id="user-gender" colspan="4"></td>
+        </tr>
+        <tr>
+            <th>CURRENT ADDRESS</th>
+            <td id="user-address" colspan="4"></td>
+        </tr>
+        <tr>
+            <th>DATE OF BIRTH</th>
+            <td id="user-dob" colspan="4"></td>
+        </tr>
+        <tr>
+            <th>TIME</th>
+            <td id="user-time" colspan="4"></td>
+        </tr>
+        <tr>
+            <th>LANGUAGES</th>
+            <td colspan="4">
+                <ul id="user-lang" >
+                    
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>FIELD OF INTEREST</th>
+            <td colspan="4">
+                <ul id="user-interest">
+                    
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th rowspan="5">UPLOAD YOUR PICTURE</th>
+            <td rowspan="5" colspan="4"><img src="" alt="my image" width="150px"></td>
+        </tr>
+
+    </table>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>

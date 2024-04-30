@@ -1,0 +1,18 @@
+.border
+{
+    border-color: red;
+    outline: none;
+    box-shadow: inset 0 0 2px 0.5px red;
+}
+.form
+{
+    display:block;
+}
+.displaying{
+    display: none;
+}
+.notselect
+{
+    background-color: red;
+    color: white;
+}
