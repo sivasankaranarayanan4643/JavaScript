@@ -1,0 +1,45 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper
+{
+    border: 2px solid black;
+    min-height: 100vh;
+}
+.navbar
+{
+    border-bottom: 2px solid black;
+    padding:0 2% ;
+    display: flex;
+    align-items: center;
+}
+table td
+{
+    padding: 2%;
+}
+table
+{
+    margin: 2% 2%;
+}
+.navitems
+{
+    padding: 2%;
+}
+.form
+{
+    padding: 2%;
+}
+#contentpage
+{
+    display: none;
+}
+.footer
+{
+    min-width: 100%;
+    padding: 3%;
+    position:absolute;
+    bottom: 0;
+    border-top: 2px solid black;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleSheets/style.css">
+    <script src="JavaScript/Script.js"></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <img class="" src="images/logo.png" alt="">
+            <span class="navitems">Library Portal</span>
+            <span class="navitmes">Books</span>
+        </div>
+
+        <div id="form" class="form">
+            <h2>Add New Book</h2>
+            <form onsubmit="return false">
+                <table>
+                    
+                    <tr>
+                        <td>
+                            <label for="category">Category</label>
+                        </td>
+                        <td>
+
+                            <select  id="category">
+                                <option  value="IT">IT</option>
+                            </select>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="book">Book</label>
+                        </td>
+                        <td>
+                            <input type="text" id="book" onfocusout="checkbook('book')">
+                        </td>
+                        <td>
+                            <label id="bookmessage" class="message" ></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Author Email</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" onfocusout="checkemail('email')">
+                        </td>
+                        <td>
+                            <label id="emailmessage" class="message"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="name">Author Name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" onfocusout="checkname('name')">
+                        </td>
+                        <td>
+                            <label id="namemessage" class="message"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="published">Published</label>
+                        </td>
+                        <td>
+                            <input type="text" id="published" onfocusout="checkpublished('published')">
+                        </td>
+                        <td>
+                            <label id="publishedmessage" class="message"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="price">Price</label>
+                        </td>
+                        <td>
+                            <input type="text" id="price" onfocusout="checkprice('price')">
+                        </td>
+                        <td>
+                            <label id="pricemessage" class="message"></label>
+                        </td>
+                    </tr>
+                </table>
+                    <div>
+                        <input type="reset" value="Save"  id="sumbitbtn" onclick="save()">
+                        <input type="reset" onclick="clearmessage()" value="Cancel" id="resetbutton">
+                        <button id="showbtn" onclick="showpage()">Show</button>
+                    </div>
+
+            </form>
+        </div>
+        <div id="contentpage">
+            <button id="back" onclick="returnpage()">Back</button>
+            <div id="contents">
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright @<span id="present-year"> 2024</span>-Syncfusion</p>
+    </div>
+</body>
+</html>
